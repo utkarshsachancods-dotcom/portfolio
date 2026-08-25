@@ -1,9 +1,141 @@
-body { background: #0f0f0f; color: white; font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
-header { padding: 80px 20px; background: linear-gradient(135deg, #6a11cb, #2575fc); }
-h1 { font-size: 50px; margin: 0; letter-spacing: 3px; }
-.buttons a { display: inline-block; margin: 10px; padding: 12px 24px; background: white; color: black; text-decoration: none; border-radius: 6px; font-weight: bold; }
-.buttons .sec { background: transparent; color: white; border: 2px solid white; }
-section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 20px 0; }
-.card { background: #1e1e1e; padding: 40px 20px; border-radius: 10px; border: 1px solid #333; }
-#contact { background: #1a1a1a; border-radius: 15px; margin-top: 30px; }
+body{margin:0;background:#070a12;color:#fff;font-family:'Poppins',sans-serif;text-align:center;overflow-x:hidden}
+header{padding:110px 20px;background:radial-gradient(circle at 20% 30%, #ff00cc 0%, transparent 40%), radial-gradient(circle at 80% 20%, #00dbff 0%, transparent 40%), radial-gradient(circle at center, #1e90ff 0%, #0a0a18 70%);border-bottom:1px solid #222}
+h1{font-size:65px;margin:0;letter-spacing:5px;text-shadow:0 0 20px #1e90ff}
+header p{color:#b8d4ff}
+header a{display:inline-block;margin:10px;padding:13px 28px;background:#fff;color:#000;text-decoration:none;border-radius:100px;font-weight:700;transition:.3s}
+header a:hover{transform:scale(1.07);box-shadow:0 0 25px #fff}
+header a:last-child{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(10px)}
+
+section{padding:80px 20px;max-width:1150px;margin:auto;position:relative}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-top:30px}
+
+/* COLOURFUL GLASS CARDS */
+.grid div{
+  padding:40px 15px;border-radius:18px;font-weight:600;
+  background:rgba(255,255,255,.07);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.15);border-top:1px solid rgba(255,255,255,.3);
+  box-shadow:0 8px 32px rgba(0,0,0,.5);transition:.35s;position:relative;overflow:hidden;
+}
+/* Har card ko alag colour glow */
+.grid div:nth-child(1):hover{border-color:#00dbff;box-shadow:0 0 30px rgba(0,219,255,.5);background:rgba(0,219,255,.12)}
+.grid div:nth-child(2):hover{border-color:#ff00cc;box-shadow:0 0 30px rgba(255,0,204,.5);background:rgba(255,0,204,.12)}
+.grid div:nth-child(3):hover{border-color:#ffe600;box-shadow:0 0 30px rgba(255,230,0,.5);background:rgba(255,230,0,.12)}
+.grid div:nth-child(4):hover{border-color:#7c3aed;box-shadow:0 0 30px rgba(124,58,237,.5);background:rgba(124,58,237,.12)}
+
+.grid div:hover{transform:translateY(-10px) scale(1.02)}/* --- MIDDLE KO COLOURFUL BANAO --- */
+
+/* Puri body ke peeche 2 bade rang ke glow */
+body {
+  position: relative;
+  background: #252627 !important;
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  z-index: 2;
+}
+
+/* Video Editing section ke peeche Pink + Blue glow */
+section:nth-of-type(1)::before {
+  content: "";
+  position: absolute;
+  top: 10%; left: -10%;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(255,0,204,0.25) 0%, transparent 70%);
+  filter: blur(60px);
+  z-index: -1;
+}
+
+section:nth-of-type(1)::after {
+  content: "";
+  position: absolute;
+  top: 30%; right: -10%;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(0,219,255,0.25) 0%, transparent 70%);
+  filter: blur(70px);
+  z-index: -1;
+}
+
+/* Thumbnail section ke peeche Yellow + Purple glow */
+section:nth-of-type(2)::before {
+  content: "";
+  position: absolute;
+  top: 0%; left: 30%;
+  width: 700px; height: 400px;
+  background: radial-gradient(circle, rgba(124,58,237,0.2) 0%, rgba(255,230,0,0.15) 100%, transparent 70%);
+  filter: blur(80px);
+  z-index: -1;
+}
+/* Tech Thumbnail 2 aur 3 ke liye Colour Glow Fix */
+
+/* Tech Thumbnail 2 ko Yellow Glow */
+.grid div:nth-child(5):hover {
+  border-color: #ffe600 !important;
+  box-shadow: 0 0 25px rgba(255, 230, 0, 0.7) !important;
+}
+
+/* Tech Thumbnail 3 ko Pink Glow */
+.grid div:nth-child(6):hover {
+  border-color: #ff00cc !important;
+  box-shadow: 0 0 25px rgba(255, 0, 204, 0.7) !important;
+}
+/* ===== VERTICAL GAP FIX ===== */
+
+body {
+  background: #0B0E14;
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
