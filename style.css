@@ -139,7 +139,38 @@ body {
     gap: 8px;
   }
 }
+/* ===== Mobile Responsive Fix ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 32px;
+  }
+  
+  header p {
+    font-size: 16px;
+  }
 
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  /* Yahi main cheez hai - phone me saare card ek ke neeche ek ayenge */
+  .grid {
+    grid-template-columns: 1fr !important; /* 1 column only */
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  section {
+    padding: 30px 15px !important;
+  }
+  
+  h2 {
+    font-size: 22px;
+  }
+}
 
 
 
