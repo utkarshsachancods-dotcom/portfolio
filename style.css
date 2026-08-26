@@ -1,3 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
 body{margin:0;background:#070a12;color:#fff;font-family:'Poppins',sans-serif;text-align:center;overflow-x:hidden}
 header{padding:110px 20px;background:radial-gradient(circle at 20% 30%, #ff00cc 0%, transparent 40%), radial-gradient(circle at 80% 20%, #00dbff 0%, transparent 40%), radial-gradient(circle at center, #1e90ff 0%, #0a0a18 70%);border-bottom:1px solid #222}
 h1{font-size:65px;margin:0;letter-spacing:5px;text-shadow:0 0 20px #1e90ff}
@@ -139,39 +155,24 @@ body {
     gap: 8px;
   }
 }
-/* ===== Mobile Responsive Fix ===== */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 32px;
-  }
-  
-  header p {
-    font-size: 16px;
+  header {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 60px 20px !important;
   }
 
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-  }
-
-  /* Yahi main cheez hai - phone me saare card ek ke neeche ek ayenge */
   .grid {
-    grid-template-columns: 1fr !important; /* 1 column only */
-    gap: 15px;
-    padding: 0 15px;
+    grid-template-columns: 1fr !important;
+    width: 100%;
+    padding: 0 16px;
   }
 
-  section {
-    padding: 30px 15px !important;
-  }
-  
-  h2 {
-    font-size: 22px;
+  .card {
+    width: 100% !important;
+    margin: 0 !important;
   }
 }
-
 
 
 
